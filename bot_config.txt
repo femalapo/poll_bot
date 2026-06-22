@@ -1,0 +1,14 @@
+Bot Token:
+<bot_token>
+
+Channels to post poll:
+<channel_1>
+<channel_2>
+...
+<channel_n>
+
+Channels to post results:
+<channel_1>
+<channel_2>
+...
+<channel_n>
