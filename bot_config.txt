@@ -2,13 +2,13 @@ Bot Token:
 <bot_token>
 
 Channels to post poll:
-<channel_1>
-<channel_2>
+<channel_id_1>
+<channel_id_2>
 ...
-<channel_n>
+<channel_id_n>
 
 Channels to post results:
-<channel_1>
-<channel_2>
+<channel_id_1>
+<channel_id_2>
 ...
-<channel_n>
+<channel_id_n>
