@@ -1,0 +1,17 @@
+When to send poll (HH:MM - leave blank for immediately):
+<HH:MM>
+
+Duration (in hours):
+<duration_int>
+
+Needed for practice:
+<needed_for_practice_int>
+
+Question:
+<question_str>
+
+Answers (- denotes for no practice):
+<answer_string_1>
+<answer_string_2>
+...
+<answer_string_n>
