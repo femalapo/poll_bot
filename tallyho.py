@@ -1,6 +1,7 @@
 import discord
 from discord.ext import tasks
 import datetime as dt
+import sys
 
 ### Script Initialization ###
 
@@ -238,11 +239,12 @@ if __name__ == "__main__":
     ### TallyHo Tasks ###
     # Send poll
     if SEND_POLL_TIME is not None:
-        send_time = dt.time(hour=int(SEND_POLL_TIME[:2]),
-                            minute=int(SEND_POLL_TIME[3:]),
-                            tzinfo=dt.timezone(-dt.timedelta(hours=7)))
+        send_time = send_time.replace(hour=int(SEND_POLL_TIME[:2]),
+                                      minute=int(SEND_POLL_TIME[3:]),
+                                      second=0,
+                                      microsecond=0)
 
-        @tasks.loop(time=send_time)
+        @tasks.loop(time=send_time.time())
         async def send_poll_wrapper():
             await send_poll()
             print("Poll sent.")
