@@ -1,7 +1,6 @@
 import discord
 from discord.ext import tasks
 import datetime as dt
-import sys
 
 ### Script Initialization ###
 
